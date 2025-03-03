@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OBJ Viewer</title>
+    <link rel="stylesheet" href="main_page.css">
+</head>
+<body>
+    <div id="nav_box">
+        <div class="nav_content">
+            <div class="nav_label">3D内容智能生成</div>
+            <div class="nav_label">AIGC气象智能生成</div>
+            <div class="nav_label">其他</div>
+            <div id="block"></div>
+        </div>
+    </div>
+
+    <div id = "pagebox">
+        <div id="page">
+            <div id="obj_page">
+                <div id="render_window">
+                </div>
+                <div id = "parm_panel">
+                    <div id="mp4_file_uploader" >
+                        <div id="lay_img">
+
+                        </div>
+                        <span id="file-name">选择mp4文件</span>
+
+                    </div>
+                    <input type="file" id="mp4_file_input" accept=".mp4"/>
+                    <div id="file-deliver">文件上传</div>
+                    <div id="file-convert">文件转换</div>
+                    <div id="file-uploader">选择模型文件</div>
+                    <input type="file" id="file-input" accept=".obj"/>
+        
+                </div>
+            </div>
+
+            <div id="AIGC_page">
+                <h1>AIGC气象智能生成</h1>
+
+            </div>
+ 
+        </div>
+   
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="obj_rendering.js"></script>
+    <script src="page_interact.js"></script>
+</body>
+</html>
